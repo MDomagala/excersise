@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 0px 18px 5px darkgrey
+}
+
+mat-toolbar {
+  padding: 1rem
+}
+
+div {
+  position: relative;
+  flex: 1 1 auto;
+
+  & > canvas {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: transparent;
+  }
+
+  & > .bottom {
+    z-index: 0;
+  }
+
+  & > .top {
+    z-index: 1;
+  }
+}

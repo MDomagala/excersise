@@ -1,0 +1,34 @@
+:host {
+  width: 100%;
+  display: flex;
+  margin: 0 1rem;
+
+  & > div {
+    flex: 1 1 auto;
+    height: 30px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  & > div:focus-visible {
+    outline: none;
+  }
+
+}
+
+[contenteditable="true"] {
+  white-space: nowrap;
+  overflow: hidden;
+
+  & > div {
+    display:none;
+  }
+
+}
+[contenteditable="true"] > div {
+  display:none;
+}
+[contenteditable="true"] * {
+  display:inline;
+  white-space:nowrap;
+}
